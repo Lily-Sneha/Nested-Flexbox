@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(250, 232, 235);
+}
+
+.container1 {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 500px;
+    padding: 1em;
+}
+
+.element1 {
+    background-color: rgb(246, 8, 202);
+    height: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+.element2 {
+    background-color: rgb(250, 184, 239);
+    height: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.element3 {
+    background-color: greenyellow;
+    height: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+.subelement {
+    background-color: yellow;
+    display: flex;
+    width: 79px;
+    align-items: start;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container2 {
+    background-color: rgb(6, 166, 246);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    background-color: white;
+    flex: 1;
+    margin: 3px;
+    padding: 35px;
+    height: 200px;
+    flex-flow: row wrap;
+}
+
+.subitem {
+    background-color: rgb(55, 126, 14);
+    margin: 3px;
+    padding: 3px;
+    flex: 2;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.item .subitem:nth-child(4),
+.item .subitem:nth-child(7) {
+    flex: 100%;
+    background-color: rgb(124, 5, 17);
+}
+
+.container3 {
+    background-color: rgb(249, 195, 249);
+    width: 400px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.container3 div {
+    background-color: yellow;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.container4 {
+    background-color: maroon;
+    justify-content: flex-end;
+    width: 500px;
+    display: flex;
+    height: 103px;
+    gap: 10px;
+}
+
+.container4 div {
+    background-color: rgb(6, 206, 20);
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container5 {
+    background-color: rgb(185, 239, 185);
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    display: flex;
+    height: 103px;
+    gap: 10px;
+}
+
+.container5 div {
+    background-color: rgb(168, 169, 249);
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    flex-grow: 10px;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container6 {
+    background-color: rgb(101, 229, 241);
+    justify-content: space-between;
+    width: 500px;
+    display: flex;
+    height: 103px;
+    gap: 10px;
+}
+
+.container6 div {
+    background-color: orange;
+    align-items: stretch;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container7 {
+    background-color: rgb(252, 162, 245);
+    display: flex;
+    justify-content: space-evenly;
+    height: 103px;
+    width: 500px;
+    gap: 10px;
+}
+
+.container7 div {
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.container8 {
+    background-color: rgb(252, 162, 245);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 103px;
+    width: 500px;
+    gap: 10px;
+}
+
+.container8 div {
+    background-color: rgba(0, 213, 255, 0.896);
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.container9 {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 213px;
+    width: 500px;
+    gap: 10px;
+}
+
+.container9 div {
+    background-color: rgba(244, 174, 44, 0.896);
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.container10 {
+    display: flex;
+    flex: 1;
+    height: 500px;
+    width: 500px;
+    flex-direction: row;
+}
+
+header,
+footer {
+    background-color: rgb(3, 141, 163);
+    height: 70px;
+    width: 500px;
+
+}
+
+aside {
+    background-color: greenyellow;
+    height: 502px;
+    width: 99px;
+}
+
+.container10>nav {
+    order: -1;
+}
+
+nav {
+    background-color: greenyellow;
+    height: 502px;
+    width: 93px;
+}
+
+.container10>article {
+    flex: 1;
+}
+
+article {
+    height: 502px;
+    width: 309px;
+}
+
+img {
+    height: 502px;
+    width: 309px;
+}
